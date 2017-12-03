@@ -20,8 +20,11 @@ Technology stack
  - postgresql
 
 
-26.11.2017 - First commit with simply SpringBoot setup. 
+
+03.11.2017 - Builder // beans // some configuration implemented.
 30.11.2017 - Interfaces and Entity classes implemented.
+26.11.2017 - First commit with simply SpringBoot setup. 
+
 
 
 Authors : 
