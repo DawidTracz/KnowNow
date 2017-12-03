@@ -9,7 +9,7 @@
 	<packaging>jar</packaging>
 
 	<name>KnowNow</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Learning Web Application by SpringBoot</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -52,6 +52,13 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>9.4.1208-jdbc42-atlassian-hosted</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
