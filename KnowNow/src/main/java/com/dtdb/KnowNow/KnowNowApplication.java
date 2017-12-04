@@ -24,8 +24,8 @@ public class KnowNowApplication {
 		return (args) -> {
 			// save a couple of customers
 
-			repository.save(User.create().name("Dawid").surname("Tracz").build());
-			repository.save(User.create().name("Dima").countrySymbol("UKR").build());
+			repository.save(User.builder().name("Dawid").surname("Tracz").build());
+			repository.save(User.builder().name("Dima").countrySymbol("UKR").build());
 
 			// fetch all customers
 			log.info("Customers found with findAll():");

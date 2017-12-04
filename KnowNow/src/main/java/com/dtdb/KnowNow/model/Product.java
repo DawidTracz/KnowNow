@@ -1,19 +1,29 @@
 package com.dtdb.KnowNow.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import lombok.Builder;
+import lombok.ToString;
 
+import javax.persistence.*;
+
+@Builder
+@ToString
 @Entity
 @Table(name="products")
 public class Product {
 
     @Id
     @GeneratedValue
+
+    @Column(name = "id",unique = true, updatable = false, nullable = false, length=2)
     private int id;
+
+    @Column(name = "name", nullable = false, length=35)
     private String name;
-    private int userID;
+
+    @Column(name = "owning_user", nullable = false, length=6)
+    private int owningUser;
+
+    @Column(name = "number_of_sections", nullable = false, length=2)
     private int numberOfSections;
 
 
@@ -34,11 +44,11 @@ public class Product {
     }
 
     public int getUserID() {
-        return userID;
+        return owningUser;
     }
 
     public void setUserID(int userID) {
-        this.userID = userID;
+        this.owningUser = userID;
     }
 
     public int getNumberOfSections() {

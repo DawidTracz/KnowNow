@@ -1,17 +1,22 @@
 package com.dtdb.KnowNow.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import lombok.Builder;
+import lombok.ToString;
 
+import javax.persistence.*;
+
+@Builder
+@ToString
 @Entity
 @Table(name="status")
 public class Status {
 
     @Id
     @GeneratedValue
+
+    @Column(name = "id",unique = true, updatable = false, nullable = false, length=2)
     private int id;
+    @Column(name = "name", nullable = false, length=2)
     private String name;
 
 

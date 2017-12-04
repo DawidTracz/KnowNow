@@ -21,7 +21,8 @@ Technology stack
 
 
 
-03.11.2017 - Builder // beans // some configuration implemented.
+04.12.2017 - Lombok Builder Imported and set to classes, Buildable interface thrown out, added annotations(@Column) to class
+03.12.2017 - Builder // beans // some configuration implemented.
 30.11.2017 - Interfaces and Entity classes implemented.
 26.11.2017 - First commit with simply SpringBoot setup. 
 
