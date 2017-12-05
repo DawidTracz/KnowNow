@@ -13,7 +13,6 @@ public class Product {
 
     @Id
     @GeneratedValue
-
     @Column(name = "id",unique = true, updatable = false, nullable = false, length=2)
     private int id;
 

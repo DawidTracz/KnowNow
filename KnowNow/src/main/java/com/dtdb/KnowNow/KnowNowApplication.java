@@ -6,12 +6,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
 
 
+@EnableAutoConfiguration
 @SpringBootApplication
-
 public class KnowNowApplication {
 	private static final Logger log = LoggerFactory.getLogger(KnowNowApplication.class);
 
@@ -19,7 +19,7 @@ public class KnowNowApplication {
 		SpringApplication.run(KnowNowApplication.class, args);
 	}
 
-	@Bean
+//	@Bean
 	public CommandLineRunner knowNowDataBase(UserRepository repository) {
 		return (args) -> {
 			// save a couple of customers
